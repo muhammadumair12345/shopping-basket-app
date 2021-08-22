@@ -11,4 +11,11 @@ export const Header = styled.div`
   top: 0px;
 `;
 
-export const Logo = styled.h2``;
+export const Logo = styled.div`
+  display: flex;
+  align-items: center;
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+`;
