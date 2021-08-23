@@ -21,6 +21,9 @@ export const Nav = styled.div`
   .active {
     border-bottom: 4px solid black;
   }
+  @media (max-width: 650px) {
+    display: none;
+  }
 `;
 
 export const Link = styled(NavLink)`

@@ -5,6 +5,7 @@ import ShoppingBasketNav from "../ShoppingBasketNav/ShoppingBasketNav";
 import { Header, Logo } from "./ShoppingBasketHeader.style";
 import { Link } from "../ShoppingBasketNav/ShoppingBasketNav.style";
 import ShoppingBasketLogo from "../../images/logo.png";
+import ShoppingBasketDrawer from "../ShoppingBasketDrawer/ShoppingBasketDrawer";
 
 const ShoppingBasketHeader: FC = () => {
   return (
@@ -22,6 +23,7 @@ const ShoppingBasketHeader: FC = () => {
           </Badge>
         </IconButton>
       </Link>
+      <ShoppingBasketDrawer />
     </Header>
   );
 };
