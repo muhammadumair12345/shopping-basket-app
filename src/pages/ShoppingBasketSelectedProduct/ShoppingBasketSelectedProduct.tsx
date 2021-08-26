@@ -1,7 +1,12 @@
 import React, { FC } from "react";
+import { SelectedProduct } from "./ShoppingBasketSelectedProduct.style";
 
 const ShoppingBasketSelectedProduct: FC<any> = ({ selected_product }) => {
-  return <div>j{selected_product}</div>;
+  return (
+    <SelectedProduct>
+      <h3>{selected_product}</h3>
+    </SelectedProduct>
+  );
 };
 
 export default ShoppingBasketSelectedProduct;

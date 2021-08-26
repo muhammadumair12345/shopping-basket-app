@@ -1,5 +1,10 @@
 import React, { FC } from "react";
+import { Cart } from "./ShoppingBasketCart.style";
 
 export const ShoppingBasketCart: FC = () => {
-  return <div>Cart</div>;
+  return (
+    <Cart>
+      <h3>Cart</h3>
+    </Cart>
+  );
 };
