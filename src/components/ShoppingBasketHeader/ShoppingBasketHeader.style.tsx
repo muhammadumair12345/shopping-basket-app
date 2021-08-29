@@ -1,14 +1,15 @@
+import { Paper } from "@material-ui/core";
 import styled from "styled-components";
 
-export const Header = styled.div`
+export const Header = styled(Paper)`
   height: 10vh;
   padding: 1.2rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   display: flex;
+  border-radius: 0rem !important;
   align-items: center;
   justify-content: space-between;
   position: sticky;
-  top: 0px;
+  top: 0;
 `;
 
 export const Logo = styled.div`

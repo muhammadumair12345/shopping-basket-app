@@ -9,7 +9,7 @@ import ShoppingBasketDrawer from "../ShoppingBasketDrawer/ShoppingBasketDrawer";
 
 const ShoppingBasketHeader: FC = () => {
   return (
-    <Header>
+    <Header elevation={3}>
       <Logo>
         <Link to="/">
           <img src={ShoppingBasketLogo} alt="" />

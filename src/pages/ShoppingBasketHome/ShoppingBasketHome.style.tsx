@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
 export const Home = styled.div`
-  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  div {
+    margin: 1rem;
+    width: 22rem;
+    height: 25rem;
+  }
 `;

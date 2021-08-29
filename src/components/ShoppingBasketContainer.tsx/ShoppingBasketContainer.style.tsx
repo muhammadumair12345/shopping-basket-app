@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  flex-grow: 1;
-  padding: 1rem;
-  display: flex;
+  padding: 1.8rem;
   background-color: #fafafa;
+  min-height: 90vh;
 `;
