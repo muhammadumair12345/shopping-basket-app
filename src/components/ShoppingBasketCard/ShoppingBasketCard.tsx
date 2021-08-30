@@ -1,14 +1,22 @@
+import { IconButton } from "@material-ui/core";
+import { AddShoppingCart } from "@material-ui/icons";
 import React, { FC } from "react";
-import { ShoppingCard } from "./ShoppingBasketCard.style";
+import { CardBody, CardImage, ShoppingCard } from "./ShoppingBasketCard.style";
 
-const ShoppingBasketCard: FC<ShoppingBasketCardProp> = ({ data, key }) => {
+const ShoppingBasketCard: FC<ShoppingBasketCardProp> = ({ data }) => {
   return (
-    <ShoppingCard key={key}>
-      <img src={data.img} alt="" height="70%" width="100%" />
-      <p>{data.id}</p>
-      <p>{data.name}</p>
-      <p>{data.price}</p>
-      <p>{data.itemsLeft}</p>
+    <ShoppingCard>
+      <CardImage img_url={data.img} to="/" />
+      <CardBody>
+        <div className="name">{data.name}</div>
+        <div>PRICE ${data.price}</div>
+        <div>
+          <div>ITEMS LEFT {data.itemsLeft}</div>
+          <IconButton color="inherit">
+            <AddShoppingCart fontSize="small" />
+          </IconButton>
+        </div>
+      </CardBody>
     </ShoppingCard>
   );
 };

@@ -26,5 +26,4 @@ interface ShoppingBasketHomeProp {
 
 interface ShoppingBasketCardProp {
   data: ShoppingBasketData;
-  key: number;
 }
