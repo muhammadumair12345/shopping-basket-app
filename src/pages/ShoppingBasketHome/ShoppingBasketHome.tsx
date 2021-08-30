@@ -1,24 +1,14 @@
-import { Card } from "@material-ui/core";
 import React, { FC } from "react";
-import ShoppingBasketList from "../../json/ShoppingBasketList.json";
+import ShoppingBasketCard from "../../components/ShoppingBasketCard/ShoppingBasketCard";
 import { Home } from "./ShoppingBasketHome.style";
 
-const ShoppingBasketHome: FC = () => {
+const ShoppingBasketHome: FC<ShoppingBasketHomeProp> = ({ all_products }) => {
   return (
     <Home>
-      {Object.keys(ShoppingBasketList).map((category: string) =>
-        ShoppingBasketList[category as keyof Categories].map(
-          (
-            { id, name, price, itemsLeft, img }: ShoppingBasketData,
-            index: number
-          ) => (
-            <Card key={index}>
-              <img src={img} alt="" height="70%" width="100%" />
-              <p>{id}</p>
-              <p>{name}</p>
-              <p>{price}</p>
-              <p>{itemsLeft}</p>
-            </Card>
+      {Object.keys(all_products).map((category: string) =>
+        all_products[category as keyof Categories].map(
+          (data: ShoppingBasketData, index: number) => (
+            <ShoppingBasketCard data={data} key={index} />
           )
         )
       )}

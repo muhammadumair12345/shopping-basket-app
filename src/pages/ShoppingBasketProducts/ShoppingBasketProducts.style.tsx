@@ -1,5 +1,4 @@
 import styled from "styled-components";
+import { Home } from "../ShoppingBasketHome/ShoppingBasketHome.style";
 
-export const Products = styled.div`
-  flex-grow: 1;
-`;
+export const Products = styled(Home)``;
